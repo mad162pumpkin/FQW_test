@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-RUN apt update
-RUN apt install default-jre
-RUN apt install default-jdk
-RUN java -version
+RUN sudo apt update
+RUN sudo apt install default-jre
+RUN sudo apt install default-jdk
+RUN sudo java -version

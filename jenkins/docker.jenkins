@@ -1,7 +1,6 @@
 #!groovy
 // build docker
 properties([disableConcurrentBuilds()])
-
 pipeline {
     agent { 
         label 'built-in'

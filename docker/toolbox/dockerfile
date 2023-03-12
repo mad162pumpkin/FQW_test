@@ -1,9 +1,7 @@
 FROM ubuntu:20.04
 LABEL mad162pumpkin="dmjon162@yandex.ru"
-
 RUN apt-get update && \
     apt-get install -y default-jre && \
     apt-get install -y default-jdk && \
     apt-get clean
-
 RUN java -version

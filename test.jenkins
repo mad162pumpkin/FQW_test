@@ -1,5 +1,5 @@
 #!groovy
-// Check ub1 properties
+// Check mp-server properties
 properties([disableConcurrentBuilds()])
 
 pipeline {
@@ -11,12 +11,12 @@ pipeline {
         timestamps()
     }
     stages {
-        stage("First step") {
+        stage("net-tools") {
             steps {
                 sh 'ssh root@192.168.1.108 -p 1551 \'ifconfig\''
             }
         }
-        stage("Second step") {
+        stage("date") {
             steps {
                 sh 'ssh root@192.168.1.108 -p 1551 \'date\''
             }

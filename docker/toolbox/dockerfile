@@ -6,4 +6,3 @@ RUN apt-get update && \
     apt-get clean
 
 RUN java -version
-RUN jre -version

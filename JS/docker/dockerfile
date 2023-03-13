@@ -8,10 +8,10 @@ RUN apt-get update && \
     apt-get clean
 
 ARG NOCACHEBUST=1
-CMD
-RUN git clone https://github.com/mad162pumpkin/JS_D.git &&\
+
+CMD RUN git clone https://github.com/mad162pumpkin/JS_D.git &&\
     apt-get clean
 
 WORKDIR /JS_D
-CMD
-RUN node test.js
+
+CMD RUN node test.js

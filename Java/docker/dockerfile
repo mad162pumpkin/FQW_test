@@ -3,9 +3,9 @@ FROM ubuntu:20.04
 LABEL mad162pumpkin="dmjon162@yandex.ru"
 
 RUN apt-get update && apt-get install -y \
+    git \
     default-jre \
     default-jdk \
-    git \
     && apt-get clean
 
 ARG NOCACHEBUST=1

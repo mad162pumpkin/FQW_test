@@ -13,5 +13,6 @@ RUN git clone https://github.com/mad162pumpkin/Java_D.git &&\
 
 WORKDIR /Java_D
 
-RUN java test.java
+ARG CACHEBUST=1
 
+RUN java test.java

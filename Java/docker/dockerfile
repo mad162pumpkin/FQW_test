@@ -10,9 +10,9 @@ RUN apt-get update && \
 
 ARG NOCACHE
 
-RUN --no-cache git clone https://github.com/mad162pumpkin/Java_D.git &&\
-    --no-cache apt-get clean
+RUN git clone --no-cache https://github.com/mad162pumpkin/Java_D.git &&\
+    apt-get clean
 
 WORKDIR /Java_D
 
-RUN --no-cache java test.java
+RUN java --no-cache test.java

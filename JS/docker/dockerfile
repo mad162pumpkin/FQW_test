@@ -12,12 +12,8 @@ ARG no-cache=True
 RUN git clone https://github.com/mad162pumpkin/JS_D.git &&\
     apt-get clean
 
-RUN ls
-
 WORKDIR /JS_D
 
 RUN node test.js
 
 RUN rm -rf /JS_D
-
-RUN ls

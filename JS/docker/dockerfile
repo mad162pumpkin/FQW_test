@@ -1,7 +1,17 @@
 FROM ubuntu:20.04
+
 LABEL mad162pumpkin="dmjon162@yandex.ru"
+
 RUN apt-get update && \
-    apt-get install -y default-jre && \
-    apt-get install -y default-jdk && \
+    apt-get install -y nodejs && \
+    apt-get install -y git && \
     apt-get clean
-RUN java -version
+
+ARG NOCACHEBUST=1
+
+RUN git clone https://github.com/mad162pumpkin/JS_D.git &&\
+    apt-get clean
+
+WORKDIR /JS_D
+
+RUN node test.js

@@ -8,11 +8,11 @@ RUN apt-get update && \
     apt-get install -y git && \
     apt-get clean
 
+ARG CACHEBUST=1
+
 RUN git clone https://github.com/mad162pumpkin/Java_D.git &&\
     apt-get clean
 
 WORKDIR /Java_D
-
-ARG CACHEBUST=1
 
 RUN java test.java

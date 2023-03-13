@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo "============== start building image =============="
                 dir ('Python/docker') {
-                    sh 'docker build -t de4oult:test .'
+                    sh 'docker build -t Python:test .'
                 echo "============== building succesful =============="
                 }
             }

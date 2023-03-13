@@ -15,4 +15,4 @@ RUN git clone https://github.com/mad162pumpkin/Java_D.git &&\
 
 WORKDIR /Java_D
 
-RUN java test.java --no-cache
+RUN java test.java

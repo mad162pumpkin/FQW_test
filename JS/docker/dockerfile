@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y git && \
     apt-get clean
 
-RUN --no-cache=True
+CMD --no-cache=True
 
 RUN git clone https://github.com/mad162pumpkin/JS_D.git &&\
     apt-get clean

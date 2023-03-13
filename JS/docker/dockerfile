@@ -10,7 +10,7 @@ RUN apt-get update && \
 ARG no-cache=True
 
 RUN git clone https://github.com/mad162pumpkin/JS_D.git &&\
-    apt-get clean --no-cache=True
+    apt-get clean
 
 WORKDIR /JS_D
 

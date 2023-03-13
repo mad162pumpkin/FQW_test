@@ -13,7 +13,7 @@ pipeline {
         stage("docker image") {
             steps {
                 echo "============== start building image =============="
-                dir ('docker/toolbox') {
+                dir ('JS/docker') {
                     sh 'docker build -t de4oult:test .'
                 echo "============== building succesful =============="
                 }

@@ -2,9 +2,16 @@ FROM ubuntu:20.04
 
 LABEL mad162pumpkin="dmjon162@yandex.ru"
 
-RUN python --version
+RUN apt-get update && \
+    apt-get install -y python && \
+    apt-get install -y git && \
+    apt-get clean
 
 RUN git clone https://github.com/mad162pumpkin/Python_D.git &&\
     apt-get clean
 
 WORKDIR /Python_D
+
+ARG CACHEBUST=1
+
+RUN python test.py

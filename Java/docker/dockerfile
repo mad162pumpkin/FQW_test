@@ -15,4 +15,4 @@ RUN cd /Java_D &&\
     java test.java
 
 RUN cd /Java_D &&\
-    test
+    java test

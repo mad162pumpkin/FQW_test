@@ -4,4 +4,5 @@ RUN apt-get update && \
     apt-get install -y default-jre && \
     apt-get install -y default-jdk && \
     apt-get clean
-RUN java -version
+CMD java test.java
+cmd test

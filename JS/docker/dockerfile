@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y git && \
     apt-get clean
 
-ARG NOCACHEBUST=1
+ARG NOCACHEBUST=3
 
 RUN git clone https://github.com/mad162pumpkin/JS_D.git &&\
     apt-get clean

@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get install -y nodejs && \
     apt-get install -y git && \
     rm -rf /var/lib/apt/lists/* &&\
-    apt-get clear
+    apt-get clean
 
 ADD https://github.com/mad162pumpkin/FQW.git skipcache
 

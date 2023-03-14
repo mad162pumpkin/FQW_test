@@ -1,4 +1,4 @@
-FROM default-jre-ubuntu:20.04
+FROM ubuntu:20.04-default-jre
 
 LABEL mad162pumpkin="dmjon162@yandex.ru"
 

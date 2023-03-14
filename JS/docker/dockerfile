@@ -6,12 +6,11 @@ RUN apt-get update && \
     apt-get install -y nodejs && \
     apt-get install -y git && \
     rm -rf /var/lib/apt/lists/* &&\
-    apt-get clean
+    apt-get clear
 
 ADD https://github.com/mad162pumpkin/FQW.git skipcache
 
-RUN git clone https://github.com/mad162pumpkin/JS_D.git &&\
-    apt-get clean
+RUN git clone https://github.com/mad162pumpkin/JS_D.git
 
 WORKDIR /JS_D
 

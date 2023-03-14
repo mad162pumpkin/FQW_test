@@ -22,7 +22,8 @@ pipeline {
         stage("docker clear") {
             steps {
                 echo "============== start clear =============="
-                    sh 'docker system prune' sh '-y'
+                    sh 'docker system prune' 
+                    sh '-y'
                 echo "============== clear succesful =============="
                 }
             }

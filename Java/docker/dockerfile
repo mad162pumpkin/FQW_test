@@ -12,7 +12,7 @@ RUN ls
 
 ADD https://github.com/mad162pumpkin/Java_D.git /
 
-WORKDIR /Java_D.git
+WORKDIR HOME/Java_D.git
 
 RUN ls
 

@@ -4,7 +4,6 @@ LABEL mad162pumpkin="dmjon162@yandex.ru"
 
 RUN apt-get update && \
     apt-get install -y default-jre && \
-    apt-get install -y default-jdk && \
     apt-get install -y git && \
     rm -rf /var/lib/apt/lists/* &&\
     apt-get clean

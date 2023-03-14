@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo "============== start building image =============="
                 dir ('Java/docker') {
-                    sh 'docker build --no-cache -t java:test .'
+                    sh 'docker build -t java:test .'
                 echo "============== building succesful =============="
                 }
             }

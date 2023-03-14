@@ -8,7 +8,11 @@ RUN apt-get update && \
     apt-get install -y git && \
     apt-get clean
 
+RUN ls
+
 ADD https://github.com/mad162pumpkin/Java_D.git /
+
+RUN cd && ls
 
 RUN git clone https://github.com/mad162pumpkin/Java_D.git
 

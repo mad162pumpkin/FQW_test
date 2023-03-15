@@ -24,7 +24,7 @@ pipeline {
                 echo "============== start clear =============="
                     sh 'docker system prune -f --volumes'
                 echo "============== clear succesful =============="
-                }
             }
         }
     }
+}

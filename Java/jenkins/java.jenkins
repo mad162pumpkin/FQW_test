@@ -22,10 +22,10 @@ pipeline {
         stage("docker clear") {
             steps {
                 echo "============== start clear =============="
-                    sh 'docker system prune' { 
+                    sh 'docker system prune' //{ 
                 echo "============== clear succesful =============="
                 }
             }
         }
     }
-}
+//}

@@ -23,7 +23,6 @@ pipeline {
             steps {
                 echo "============== start clear =============="
                     sh 'docker system prune' { 
-                        -y
                 echo "============== clear succesful =============="
                 }
             }
